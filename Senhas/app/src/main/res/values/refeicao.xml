@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="refeicao_array">
+        <item>Carne</item>
+        <item>Peixe</item>
+    </string-array>
+</resources>

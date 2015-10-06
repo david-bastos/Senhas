@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.estg.davidbastos.senhas.ConfigsActivity">
+
+    <TextView android:text="Configuração Pessoal"
+        android:id="@+id/labeltitle"
+        android:textSize="@dimen/abc_text_size_title_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/labelCA1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/labeltitle"
+        android:text="Nome:" />
+
+    <EditText
+        android:id="@+id/CA1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelCA1"/>
+
+    <TextView
+        android:id="@+id/labelCA2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CA1"
+        android:layout_weight="1"
+        android:text="Telemóvel:" />
+
+    <EditText
+        android:id="@+id/CA2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelCA2"
+        android:inputType="numberDecimal"
+        android:maxLength="9"/>
+
+    <TextView
+        android:id="@+id/labelCA3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CA2"
+        android:layout_weight="1"
+        android:text="Email:" />
+
+    <EditText
+        android:id="@+id/CA3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelCA3"/>
+
+    <TextView
+        android:id="@+id/labelCA4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CA3"
+        android:layout_weight="1"
+        android:text="Posição:" />
+
+    <Spinner
+        android:id="@+id/CA4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelCA4" />
+
+    <TextView
+        android:id="@+id/labelCA5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CA4"
+        android:layout_weight="1"
+        android:text="Período Preferencial:" />
+
+    <Spinner
+        android:id="@+id/CA5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelCA5" />
+
+    <Button
+        android:id="@+id/save_config"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="Guardar Configuração"
+        android:layout_below="@id/CA5"
+        android:onClick="saveConfig"/>
+
+    <Button
+        android:id="@+id/ignore_config"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="Ignorar Configuração"
+        android:layout_below="@id/save_config"/>
+
+</RelativeLayout>

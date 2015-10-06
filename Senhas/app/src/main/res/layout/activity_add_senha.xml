@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.estg.davidbastos.senhas.AddSenhaActivity">
+
+        <TextView
+            android:id="@+id/labelCantina"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cantina:" />
+
+        <Spinner
+            android:id="@+id/cantina_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelCantina" />
+
+        <TextView
+            android:id="@+id/labelPeriodo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cantina_spinner"
+            android:layout_weight="1"
+            android:text="Período:" />
+
+        <Spinner
+            android:id="@+id/periodo_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelPeriodo" />
+
+        <TextView
+            android:id="@+id/labelRefeicao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/periodo_spinner"
+            android:layout_weight="1"
+            android:text="Refeição:" />
+
+        <Spinner
+            android:id="@+id/refeicao_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelRefeicao" />
+
+        <TextView
+            android:id="@+id/labelDocente"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/refeicao_spinner"
+            android:layout_weight="1"
+            android:text="Senha para Docente:" />
+
+        <Spinner
+            android:id="@+id/docente_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelDocente" />
+
+        <TextView
+            android:id="@+id/labelPreco"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/docente_spinner"
+            android:layout_weight="1"
+            android:text="Preço:" />
+
+        <Spinner
+            android:id="@+id/preco_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelPreco" />
+
+        <TextView
+            android:id="@+id/labelData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/preco_spinner"
+            android:layout_weight="1"
+            android:text="Data:" />
+
+        <DatePicker
+            android:id="@+id/data"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelData"
+            android:endYear="2100"
+            android:startYear="1900"></DatePicker>
+
+        <TextView
+            android:id="@+id/labelCell"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data"
+            android:layout_weight="1"
+            android:text="Telemóvel:" />
+
+        <EditText
+            android:id="@+id/cell"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelCell"
+            android:inputType="numberDecimal"
+            android:maxLength="9"/>
+
+        <Button
+            android:id="@+id/add_senha"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:text="Guardar Senha"
+            android:layout_below="@id/cell"
+            android:onClick="setDate"/>
+
+    </RelativeLayout>
+</ScrollView>

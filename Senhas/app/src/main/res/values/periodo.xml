@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="periodo_array">
+        <item>Almoço</item>
+        <item>Jantar</item>
+    </string-array>
+</resources>
